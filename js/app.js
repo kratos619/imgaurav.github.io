@@ -5,9 +5,11 @@ $(document).ready(function () {
         slideToScroll: 1
     });
 
-    $('.d-care').hover(function () {
-        $(this).css("background-color", "yellow");
-    }, function () {
-        $(this).css("background-color", "white");
+    $('.social-media-footer').mouseenter(function () {
+        $(this).addClass("animated wobble");
     });
+    $(".social-media-footer").mouseleave(function () {
+        $(this).removeClass("animated wobble");
+    });
+
 });

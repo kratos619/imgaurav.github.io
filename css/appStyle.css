@@ -1,3 +1,7 @@
+a {
+    color: inherit;
+}
+
 .section_two {
     background-color: rgba(137, 43, 226, 0.61);
     /* -webkit-clip-path: polygon(0 0, 100% 0, 100% 61%, 0 70%);
