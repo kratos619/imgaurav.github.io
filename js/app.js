@@ -11,5 +11,22 @@ $(document).ready(function () {
     $(".social-media-footer").mouseleave(function () {
         $(this).removeClass("animated wobble");
     });
+    $(function () {
+        $('#toggle-one').change(function () {
+            if ($(this).prop('checked')) {
+                console.log('You are n normal');
 
+                //$('body').removeClass("darkmode-backgrund");
+                $('body').removeClass("darkmode-backgrund");
+                $('h1,h2').removeClass("h2-dark_theme-color");
+                $('p').removeClass("p-dark_theme-color");
+            } else {
+                $('body').addClass("darkmode-backgrund");
+                $('h1,h2').addClass("h2-dark_theme-color");
+                $('p').addClass("p-dark_theme-color");
+                console.log('Your n night mode');
+            }
+
+        });
+    });
 });
