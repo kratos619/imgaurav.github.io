@@ -1,0 +1,41 @@
+/* Responsive css code */
+
+/* ##Device = Tablets, Ipads (landscape) ##Screen = B/w 768px to 1024px */
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+
+    .fixed-top {
+        padding: 10px;
+    }
+
+}
+
+/* ##Device = Low Resolution Tablets, Mobiles (Landscape) ##Screen = B/w 481px to 767px */
+
+@media (min-width: 481px) and (max-width: 767px) {
+    .fixed-top {
+        padding: 10px;
+    }
+
+    .section_three {
+        margin-top: auto;
+        /* background-color: white; */
+    }
+}
+
+/* ##Device = Most of the Smartphones Mobiles (Portrait) ##Screen = B/w 320px to 479px */
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .fixed-top {
+        padding: 8px;
+    }
+
+    .section_three {
+        margin-top: auto;
+        /* background-color: white; */
+    }
+
+    .section_two {
+        height: auto;
+    }
+}

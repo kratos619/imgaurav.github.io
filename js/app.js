@@ -18,11 +18,11 @@ $(document).ready(function () {
 
                 //$('body').removeClass("darkmode-backgrund");
                 $('body').removeClass("darkmode-backgrund");
-                $('h1,h2').removeClass("h2-dark_theme-color");
+                $('h1,h2,h3').removeClass("h2-dark_theme-color");
                 $('p').removeClass("p-dark_theme-color");
             } else {
                 $('body').addClass("darkmode-backgrund");
-                $('h1,h2').addClass("h2-dark_theme-color");
+                $('h1,h2,h3').addClass("h2-dark_theme-color");
                 $('p').addClass("p-dark_theme-color");
                 console.log('Your n night mode');
             }
