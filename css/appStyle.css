@@ -3,6 +3,10 @@ body {
         cursive;
 }
 
+.side-navmenu {
+    display: none
+}
+
 a {
     color: inherit;
 }

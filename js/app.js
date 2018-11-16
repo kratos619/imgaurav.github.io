@@ -1,32 +1,38 @@
-$(document).ready(function () {
-    $('.slider').slick({
-        infinite: true,
-        slideToShow: 1,
-        slideToScroll: 1
-    });
+// select dom Items
 
-    $('.social-media-footer').mouseenter(function () {
-        $(this).addClass("animated wobble");
-    });
-    $(".social-media-footer").mouseleave(function () {
-        $(this).removeClass("animated wobble");
-    });
-    $(function () {
-        $('#toggle-one').change(function () {
-            if ($(this).prop('checked')) {
-                console.log('You are n normal');
+const menuBtn = document.querySelector('.menu-btn');
+const menu = document.querySelector('.menu');
+const menuNav = document.querySelector('.menu-nav');
+const menuBranding = document.querySelector('.menu-branding');
+//const menuNav = document.querySelector('.btn-menu');
+const navItems = document.querySelectorAll('.nav-item');
 
-                //$('body').removeClass("darkmode-backgrund");
-                $('body').removeClass("darkmode-backgrund");
-                $('h1,h2,h3').removeClass("h2-dark_theme-color");
-                $('p').removeClass("p-dark_theme-color");
-            } else {
-                $('body').addClass("darkmode-backgrund");
-                $('h1,h2,h3').addClass("h2-dark_theme-color");
-                $('p').addClass("p-dark_theme-color");
-                console.log('Your n night mode');
-            }
+// set initial state  oof menu
 
-        });
-    });
-});
+let showMenu = false;
+
+menuBtn.addEventListener('click', toggleMenu);
+
+function toggleMenu() {
+    if (!showMenu) {
+        menuBtn.classList.add('close');
+        menu.classList.add('show');
+        menuNav.classList.add('show');
+        menuBranding.classList.add('show');
+        navItems.forEach(item => item.classList.add('show'));
+
+        // se menu state
+        showMenu = true;
+
+    } else {
+        menuBtn.classList.remove('close');
+        menu.classList.remove('show');
+        menuNav.classList.remove('show');
+        menuBranding.classList.remove('show');
+        navItems.forEach(item => item.classList.remove('show'));
+
+        // se menu state
+        showMenu = false;
+
+    }
+}
