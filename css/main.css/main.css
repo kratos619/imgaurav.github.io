@@ -295,6 +295,17 @@ main#home h1 {
   grid-area: job3;
 }
 
+.resume-btn {
+  margin: 0;
+  margin-top: 3px;
+  display: inline;
+  width: 60px;
+  height: 50px;
+  border: #eece1a solid 6px;
+  padding: 15px;
+  transition: all 0.5s ease-in-out;
+}
+
 /* line 107, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/main.scss */
 .about-info .job-3 .resume-btn {
   margin: 0;
